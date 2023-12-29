@@ -44,7 +44,7 @@ jobs:
 
     - name: Terraform Plan
       working-directory: ${{ env.working-directory }}
-      run: terraform plan -out tfplan.binary -var-file=environment/${{env_var}}/${{env_var}}.tfvars
+      run: terraform plan -out tfplan.binary -var-file=environment/${{env.env_var}}/${{env.env_var}}.tfvars
 
     - name: Terraform Show
       working-directory: ${{ env.working-directory }}
