@@ -11,7 +11,7 @@ jobs:
       name: ${{ github.ref_name }}  
       
     env:
-      env_var: ${{ vars.ENV_CONTEXT_VAR }}
+      env_var: "dev"
       working-directory: terraform
       ARM_CLIENT_ID: ${{ secrets.AZURE_AD_CLIENT_ID }}
       ARM_CLIENT_SECRET: ${{ secrets.AZURE_AD_CLIENT_SECRET }}
