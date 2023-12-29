@@ -218,7 +218,7 @@ module "module_private_endpoint_data_factory" {
 
   depends_on = [module.module_data_factory, module.module_vnet, module.module_private_dns_datafactory]
 }
-/*
+
 # ---------------------------------------------------------------------------------------------------------------------
 # KeyVault
 # ---------------------------------------------------------------------------------------------------------------------
@@ -240,4 +240,3 @@ module "module_key_vault" {
   }
   tags = merge(var.global_tags, var.keyvault_tags)
 }
-*/
