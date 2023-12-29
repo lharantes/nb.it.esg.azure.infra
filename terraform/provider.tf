@@ -3,7 +3,7 @@ terraform {
     resource_group_name  = "RG-TERRAFORM-STATE"
     storage_account_name = "stotfstatearantes"
     container_name       = "tfstate"
-    key                  = "terraform.tfstate.${var.environment}"
+    key                  = "terraform.tfstate.dev"
   }
 }
 provider "azurerm" {
