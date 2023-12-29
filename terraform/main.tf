@@ -1,5 +1,5 @@
 # ---------------------------------------------------------------------------------------------------------------------
-# Resource Groups
+# Resource Groups d
 # ---------------------------------------------------------------------------------------------------------------------
 resource "azurerm_resource_group" "rg_adf" {
   name = join("-", ["rg", lookup(local.regions, var.location, ""), var.sufix_project, var.environment])
